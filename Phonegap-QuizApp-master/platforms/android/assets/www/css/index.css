@@ -1,0 +1,229 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,400);
+
+html {
+    font-size: 0.875em;
+}
+
+@media (min-width: 641px) {
+    html {
+        font-size: 1em;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #F0F1F3;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 2em auto;
+    padding: 1em;
+    background: #fff;
+    box-shadow:  0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+}
+
+@media (min-width: 641px) {
+    .wrapper {
+        padding: 2em;
+    }
+}
+
+@media (min-width: 769px) {
+    .wrapper {
+        width: 722px;
+    }   
+}
+
+header {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #242D4A;
+    color: #242D4A;
+    text-transform: uppercase;
+}
+
+.title {
+    margin: 0;
+}
+
+.quest-number {
+    text-align: center;
+    color:  #006400;
+    
+}
+
+.h2, .h3 {
+    color: #00008B;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1em;
+    color: #242D4A;
+}
+
+li {
+    margin-bottom: 0.25em;
+}
+
+label, input {
+    cursor: pointer;
+}
+
+#showAnswer {
+    color: #8B0000;
+    font-weight: bold;
+}
+
+.points-wrap {
+    display: inline-block;
+    float: right;
+    position: relative;
+    bottom: 1em;
+    color:  #006400 ;
+}
+
+button {
+    background: #8B0000;
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+button:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 5px 1px rgba(0, 0, 0, 0.26);
+}
+
+button:active {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 5px 3px rgba(0, 0, 0, 0.26);
+}
+
+/* Custom Radio Input */
+
+input[type="radio"] {
+    display: none;
+}
+
+label:hover .inner {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: .5;
+}
+
+input:checked + .outer .inner {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+input:checked + .outer {
+    border: 2px solid #8B0000
+
+;
+}
+
+input:focus + .outer .inner {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    background-color:#8B0000;
+}
+
+.outer {
+    height: 1em;
+    width: 1em;
+    display: block;
+    float: left;
+    margin-right: 0.5em;
+    border: 2px solid #242D4A;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.inner {
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    height: 0.7em;
+    width: 0.7em;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    display: block;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: #8B0000;
+    opacity: 0;
+}
+
+@media (min-width: 641px) {
+    .inner {
+        height: 0.75em;
+        width: 0.75em;
+    }
+}
+
+/* Vertical Rhythm */
+
+body {
+    font-size: 1em;
+    line-height: 1.375em;
+    max-width: 760px;
+    margin: 0 auto;
+}
+.h1 {
+    font-size: 5.8125em;
+    line-height: 1.1827957em;
+    margin-top: 0.47311828em;
+    margin-bottom: 0.23655914em;
+}
+.h2 {
+    font-size: 3.25em;
+    line-height: 1.269230769em;
+    margin-top: 0.84615385em;
+    margin-bottom: 0.42307692em;
+}
+.h3 {
+    font-size: 1.8125em;
+    line-height: 1.51724138em;
+    margin-top: 0.75862069em;
+    margin-bottom: 0.75862069em;
+}
+.h4 {
+    font-size: 1em;
+    line-height: 1.375em;
+    margin-top: 1.375em;
+    margin-bottom: 1.375em;
+}
+p, ul, ol, pre, table, blockquote {
+    margin-top: 1.375em;
+    margin-bottom: 1.375em;
+}
+
+hr {
+    border: 1px solid;
+    margin: -1px 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+b, strong, em, small, code {
+    line-height: 1;
+}
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+sub {
+    top: 0.4em;
+}
